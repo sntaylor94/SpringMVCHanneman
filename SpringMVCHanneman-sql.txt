@@ -1,0 +1,9 @@
+create database addresslist;
+
+use addresslist;
+
+create table addresses (id int, streetAddress varchar(30), city varchar(20), state varchar(15), zip int(5), doNotMail boolean);
+
+ALTER TABLE addresses CHANGE id id INT PRIMARY KEY AUTO_INCREMENT;
+
+desc addresses;
